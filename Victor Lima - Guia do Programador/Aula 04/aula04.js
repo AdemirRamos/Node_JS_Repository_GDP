@@ -13,6 +13,8 @@ var dividir = require('./dividir')
     return a + b
   }
 
+  module.exports = soma
+
 */
 
 console.log('A soma entre os valores apresentados é de: ', somar(5, 5))
