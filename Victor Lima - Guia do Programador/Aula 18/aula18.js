@@ -3,7 +3,7 @@
 //Basicamente, um "model" é uma referência à sua tabela dentro do Sequelize.
 
 const Sequelize = require('sequelize')
-const sequelize = new Sequelize('teste', 'root', '123456', {host: "localhost", dialect: "postgresql"})
+const sequelize = new Sequelize('teste - aula 18', 'root', '', {host: "localhost", dialect: "mysql"})
 
 const Postagem = sequelize.define('postagens', {
 	título: {
@@ -40,7 +40,7 @@ const Usuários = sequelize.define('usuários', {
 	},
 
 	idade: {
-		type: Sequelize.INTIGER
+		type: Sequelize.INTEGER
 	},
 
 	email: {

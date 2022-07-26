@@ -6,7 +6,7 @@
 //Conectando-se a um banco de dados:
 
 const Sequelize = require('sequelize')
-const sequelize = new Sequelize('teste', 'root', '123456', {host: "localhost", dialect: "postgresql"})
+const sequelize = new Sequelize('usuários', 'root', '', {host: "localhost", dialect: "mysql"})
 
 //Parâmetros:
 //1º: Nome do banco de dados;
