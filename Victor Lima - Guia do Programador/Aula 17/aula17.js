@@ -6,7 +6,7 @@
 //Conectando-se a um banco de dados:
 
 const Sequelize = require('sequelize')
-const sequelize = new Sequelize('usuários', 'root', '', {host: "localhost", dialect: "mysql"})
+const sequelize = new Sequelize('PHP Login Database', 'postgres', '123', {host: "http://127.0.0.1:7265/browser/", dialect: "postgres"})
 
 //Parâmetros:
 //1º: Nome do banco de dados;
@@ -17,7 +17,7 @@ const sequelize = new Sequelize('usuários', 'root', '', {host: "localhost", dia
 
 //Testando a conexão:
 
-Sequelize.authenticate().then(() => {console.log('Conexão feita com sucesso!')}).catch(function (erro) {console.log(`Erro ao se conectar! Erro: ${erro}`)})
+sequelize.authenticate().then(() => {console.log('Conexão feita com sucesso!')}).catch(function (erro) {console.log(`Erro ao se conectar! Erro: ${erro}`)})
 
 //Através das funções "then()" e "catch()" é possível gerar um retorno em caso de sucesso ou insucesso ao se conectar ao banco de dados.
 
